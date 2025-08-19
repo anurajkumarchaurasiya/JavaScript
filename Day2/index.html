@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastWheels Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FastWheels</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#book">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Rent Your Dream Car Today</h1>
+        <p>Safe. Fast. Reliable. Booking in a few clicks.</p>
+        <a href="#book" class="hero-btn">Book Now</a>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet-section">
+        <h2>Our Fleet</h2>
+        <div class="fleet-list">
+            <div class="car-card">
+                <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="Sedan">
+                <h3>Sedan</h3>
+                <p>Comfortable, fuel-efficient, best for city rides.</p>
+                <span>$40/day</span>
+            </div>
+            <div class="car-card">
+                <img src="https://images.pexels.com/photos/170782/pexels-photo-170782.jpeg" alt="SUV">
+                <h3>SUV</h3>
+                <p>Spacious, powerful, ideal for trips & family.</p>
+                <span>$60/day</span>
+            </div>
+            <div class="car-card">
+                <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" alt="Convertible">
+                <h3>Convertible</h3>
+                <p>Stylish rides for an unforgettable experience.</p>
+                <span>$80/day</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="book" class="booking-section">
+        <h2>Book Your Car</h2>
+        <form id="bookingForm">
+            <label for="car">Choose Car:</label>
+            <select id="car" required>
+                <option value="">Select...</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Convertible">Convertible</option>
+            </select>
+            <label for="pickup">Pick-Up Date:</label>
+            <input type="date" id="pickup" required>
+            <label for="dropoff">Drop-Off Date:</label>
+            <input type="date" id="dropoff" required>
+            <button type="submit">Reserve Now</button>
+        </form>
+        <div id="confirmation" class="confirmation-message"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: info@fastwheels.com</p>
+        <p>Phone: +1 234 567 8900</p>
+    </section>
+
+    <footer>
+        <p>© 2025 FastWheels Car Rental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
