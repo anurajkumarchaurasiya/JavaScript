@@ -5,8 +5,9 @@ let arr = [
     {name: "Anu Kumari" , img: "https://plus.unsplash.com/premium_photo-1670006626907-83c7d89e320f?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", status:"Stranger"}
 ]
 
-let clutter = "";
-arr.forEach(function(val){
+function print(){
+    let clutter = "";
+arr.forEach(function(val , index){
     clutter +=  `<div id="card">
             <div id="img">
             <img src = "${val.img}">
@@ -14,7 +15,14 @@ arr.forEach(function(val){
             <h3>${val.name}</h3>
             <h5>${val.status}</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ratione!</p>
-            <button>Add Friend</button>
+            <button id="${index}">Add Friend</button>
         </div>`
 })
  document.querySelector("#main").innerHTML = clutter;
+}
+print();
+ document.querySelector("#main")
+  .addEventListener("click", function(details){
+        arr[details.target.id].status = "Friend";
+        print();
+  });
