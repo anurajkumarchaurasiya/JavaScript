@@ -13,9 +13,9 @@ arr.forEach(function(val , index){
             <img src = "${val.img}">
             </div>
             <h3>${val.name}</h3>
-            <h5>${val.status}</h5>
+            <h5 id = "${val.status}">${val.status}</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ratione!</p>
-            <button id="${index}">Add Friend</button>
+            <button class ="${val.status === "Stranger" ? "blue" : "red"}" id="${index}">${val.status === "Stranger" ? "Add Friend" : "Remove Friend"}</button>
         </div>`
 })
  document.querySelector("#main").innerHTML = clutter;

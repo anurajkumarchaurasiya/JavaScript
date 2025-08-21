@@ -33,6 +33,7 @@ body {
     border-radius: 10px;
 }
 
+
 #card #img{
     margin-bottom: 10px;
     width: 70px;
@@ -55,20 +56,33 @@ body {
     margin: 10px;
 }
 
+#card #Stranger{
+    color: red;
+}
+
+#card #Friend{
+    color: rgb(0, 255, 123);
+}
+
 #card p{
     line-height: 15px;
     font-size: 15px;
     text-align: center;
 }
 
-button{
+#card button{
     margin-top: 20px;
     font-size: 18px;
-    width: 110px;
-    height: 30px;
     color: #fff;
     border: #fff;
-    background-color: rgba(17, 46, 133, 0.733);
+    padding: 10px;
     border-radius: 10px;
 }
 
+#card button.blue{
+    background-color: rgba(17, 46, 133, 0.733);
+}
+
+#card button.red{
+    background-color: rgba(231, 12, 12, 0.893);
+}
