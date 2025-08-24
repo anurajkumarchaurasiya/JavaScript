@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#left {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb(138, 10, 10);
+}
+
+#left #text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 90%;
+}
+
+#left #text h3 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+#text h3 span {
+    font-weight: 10;
+}
+
+#text h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#text p {
+    width: 70%;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+    color: rgb(163, 16, 16);
+    font-weight: 900;
+}
+
+#btn {
+    position: absolute;
+    width: 90%;
+    top: 80%;
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#btn h3 {
+    color: rgb(163, 16, 16);
+    margin-bottom: 5px;
+}
+
+#btn p {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: .7;
+}
+
+#right {
+    width: 65%;
+    height: 100%;
+    background-color: rgb(197, 177, 152);
+}
+
+#right>img {
+    position: absolute;
+    width: 500px;
+    height: 490px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#right #center {
+    position: absolute;
+    top: 15%;
+    width: 40%;
+    /* background-color: red; */
+    margin-left: 20%;
+}
+
+#center h1 {
+    font-size: 50px;
+    color: rgb(163, 16, 16);
+    line-height: 1.5;
+}
+
+#center h1 span {
+    font-weight: 100;
+    color: #000;
+}
+
+#center h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#center h2 span {
+    font-weight: 700;
+}
+
+#center p {
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: .6;
+    margin-bottom: 30px;
+}
+
+#center #btns {
+    display: flex;
+    gap: 20px;
+}
+
+#center button:nth-child(1) {
+    background-color: transparent;
+    border: 1px solid rgb(163, 16, 16);
+    color: rgb(163, 16, 16);
+    font-weight: 500;
+}
+
+#center button:nth-child(2) {
+    background-color: rgb(163, 16, 16);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 100px;
+}
+
+#sampaltext {
+    margin-top: 30px;
+}
+
+#sampals {
+    display: flex;
+    gap: 20px;
+
+}
+
+.sampal {
+    width: 120px;
+}
+
+.sampal img {
+    width: 100px;
+    border-radius: 10px;
+
+}
